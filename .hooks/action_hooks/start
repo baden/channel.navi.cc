@@ -9,8 +9,11 @@
 #nohup ${OPENSHIFT_REPO_DIR}/diy/test.py > $OPENSHIFT_HOMEDIR/diy-0.1/logs/test.log 2>&1 &
 
 echo "Add some to start hook"
+supervisorctl reload newgps_channel
 
 exit
+
+# Прямой запуск без supervisord
 
 if [[ ! -e ./misc/bin/python ]]
 then
