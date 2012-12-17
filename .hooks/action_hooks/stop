@@ -9,3 +9,4 @@ echo "Add some scripts to stop hook"
 #kill `ps -ef | grep test.py | grep -v grep | awk '{ print $2 }'` > /dev/null 2>&1
 
 exit 0
+
