@@ -1,5 +1,11 @@
 *.py[cod]
 
+# Virtualenv
+#misc
+
+# Logs
+#logs
+
 # C extensions
 *.so
 
