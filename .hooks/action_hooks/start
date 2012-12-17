@@ -10,7 +10,7 @@
 
 echo "Add some to start hook"
 
-supervisorctl reload newgps_channel
+supervisorctl -c /etc/supervisord.conf restart newgps_channel
 
 exit
 
