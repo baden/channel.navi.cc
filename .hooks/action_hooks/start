@@ -10,6 +10,8 @@
 
 echo "Add some to start hook"
 
+exit
+
 if [[ ! -e ./misc/bin/python ]]
 then
   echo "Virtualenv не найден. Устанавливаем..."
@@ -17,7 +19,7 @@ then
 fi
 
 source ./misc/bin/activate
-./misc/bin/pip install -r ./requirements.txt
+./misc/bin/pip install -q -r ./requirements.txt
 
 export PYTHONPATH="./misc/virtenv/lib/python2.7/site-packages"
 nohup ./src/test.py > ./logs/test.log 2>&1 &
