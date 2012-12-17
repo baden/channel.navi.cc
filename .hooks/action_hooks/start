@@ -10,6 +10,16 @@
 
 echo "Add some to start hook"
 
+if [[ ! -e ./misc/bin/python ]]
+then
+  echo "Virtualenv не найден. Устанавливаем..."
+  virtualenv --no-site-packages misc
+fi
+
+source ./misc/bin/activate
+./misc/bin/pip install -q -r ./requirements.txt
+deactivate
+
 supervisorctl -c /etc/supervisord.conf restart newgps_channel
 
 exit
