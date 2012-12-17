@@ -4,6 +4,12 @@
 # $OPENSHIFT_INTERNAL_IP:8080
 # nohup $OPENSHIFT_REPO_DIR/diy/testrubyserver.rb $OPENSHIFT_INTERNAL_IP $OPENSHIFT_REPO_DIR/diy > $OPENSHIFT_HOMEDIR/diy-0.1/logs/server.log 2>&1 &
 
+
+./.hooks/action_hooks/start
+
+
+exit 0
+
 REPO_DIR=~/SDK/newgps.navi.cc/channel.navi.cc
 HOMEDIR=~/SDK/newgps.navi.cc/channel.navi.cc
 
