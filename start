@@ -1,0 +1,16 @@
+#!/bin/bash
+# The logic to start up your application should be put in this
+# script. The application will work only if it binds to
+# $OPENSHIFT_INTERNAL_IP:8080
+# nohup $OPENSHIFT_REPO_DIR/diy/testrubyserver.rb $OPENSHIFT_INTERNAL_IP $OPENSHIFT_REPO_DIR/diy > $OPENSHIFT_HOMEDIR/diy-0.1/logs/server.log 2>&1 &
+
+REPO_DIR=~/home/baden/SDK/newgps.navi.cc/channel.navi.cc
+HOMEDIR=~/home/baden/SDK/newgps.navi.cc/channel.navi.cc
+
+
+source ${REPO_DIR}/misc/virtenv/bin/activate
+export PYTHONPATH="${REPO_DIR}/misc/virtenv/lib/python2.7/site-packages"
+#nohup ${REPO_DIR}/src/test.py > $HOMEDIR/logs/test.log 2>&1 &
+${REPO_DIR}/src/test.py
+
+echo "Add some to start hook"
