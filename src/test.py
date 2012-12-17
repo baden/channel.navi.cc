@@ -36,7 +36,7 @@ class MainHandler(tornado.web.RequestHandler):
         inmemcounter += 1
         self.set_header("Cache-control", "no-cache")
         self.write("""
-            <h2>Its REworked!</h2>
+            <h2>Its second REworked!</h2>
             <p><b>DB:</b> %s</p>
             <p><b>COL:</b> %s</p>
             <p><b>Started at:</b> %s</p>
