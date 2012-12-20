@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>{{ title }}</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	<script src="http://cdn.sockjs.org/sockjs-0.3.min.js"></script>
         <style type="text/css">
         body { font-size: 12px; font-family: monospace; }
         </style>
@@ -12,7 +13,8 @@
         <script type="text/javascript">
         $(document).ready(function() {
             //var ws = new WebSocket("ws://localhost:8888/socket");
-            var ws = new WebSocket("ws://gpsapi04.navi.cc:8888/socket");
+	    var ws = new SockJS('http://localhost:8888/socket');
+            //var ws = new WebSocket("gpsapi04.navi.cc:8888/socket");
             ws.onopen = function () {
                 $('#main').append('<div>Opened</div>');
                 ws.send("First msg");

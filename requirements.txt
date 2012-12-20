@@ -6,3 +6,4 @@ wsgiref==0.1.2
 git+git://github.com/evilkost/brukva.git
 redis==2.7.2
 pyzmq==2.2.0.1
+sockjs-tornado==0.0.5
