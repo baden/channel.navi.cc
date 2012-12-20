@@ -34,7 +34,8 @@ class MainHandler(websocket.WebSocketHandler):
         self.sub_socket = ctx.socket(zmq.SUB)
 
         self.push_socket.connect("ipc:///tmp/ws_push")
-        self.sub_socket.connect("ipc:///tmp/ws_sub")
+        #self.sub_socket.connect("ipc:///tmp/ws_sub")
+        self.sub_socket.bind("ipc:///tmp/ws_sub")
         self.sub_socket.setsockopt(zmq.SUBSCRIBE, "")
 
         self.zmq_stream = ZMQStream(self.sub_socket)

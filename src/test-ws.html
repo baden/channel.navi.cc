@@ -11,15 +11,16 @@
     <body>
         <script type="text/javascript">
         $(document).ready(function() {
-            var ws = new WebSocket("ws://localhost:8888/socket");
+            //var ws = new WebSocket("ws://localhost:8888/socket");
+            var ws = new WebSocket("ws://gpsapi04.navi.cc:8888/socket");
             ws.onopen = function () {
+                $('#main').append('<div>Opened</div>');
                 ws.send("First msg");
             }
             ws.onmessage = function(event) {
                 console.log('onmessage:', event.data);
                 $('#main').append('<div>' + event.data + '</div>');
             }
-            $('#main').append('<div> Start! </div>');
         });
         </script>
         <div id="main"></div>
