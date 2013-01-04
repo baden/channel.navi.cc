@@ -439,7 +439,7 @@
 			"file": "/home/baden/SDK/newgps.navi.cc/point.navi.cc/src/server.py",
 			"settings":
 			{
-				"buffer_size": 21223,
+				"buffer_size": 7315,
 				"line_ending": "Unix"
 			}
 		},
@@ -447,7 +447,7 @@
 			"file": "src/twebsocket.py",
 			"settings":
 			{
-				"buffer_size": 2280,
+				"buffer_size": 2545,
 				"line_ending": "Unix"
 			}
 		}
@@ -544,6 +544,7 @@
 	},
 	"file_history":
 	[
+		"/var/lib/minidlna/buil_path.html",
 		"/home/baden/SDK/newgps.navi.cc/channel.navi.cc/etc/supervisord.conf",
 		"/home/baden/SDK/newgps.navi.cc/channel.navi.cc/src/test-ws.html",
 		"/home/baden/SDK/newgps.navi.cc/channel.navi.cc/requirements.txt",
@@ -670,8 +671,7 @@
 		"/home/baden/SDK/magnum-control/magnum-control/www/tests/api/user",
 		"/home/baden/SDK/magnum-control/magnum-control/www/index.html",
 		"/home/baden/SDK/magnum-control/magnum-control/www/tests/say.js",
-		"/home/baden/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
-		"/home/baden/SDK/magnum-control/magnum-control/magnum-control.sublime-project"
+		"/home/baden/.config/sublime-text-2/Packages/User/Preferences.sublime-settings"
 	],
 	"find":
 	{
@@ -775,15 +775,15 @@
 					"file": "/home/baden/SDK/newgps.navi.cc/point.navi.cc/src/server.py",
 					"settings":
 					{
-						"buffer_size": 21223,
+						"buffer_size": 7315,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1111,
-								1111
+								0,
+								0
 							]
 						],
 						"settings":
@@ -891,15 +891,15 @@
 					"file": "src/twebsocket.py",
 					"settings":
 					{
-						"buffer_size": 2280,
+						"buffer_size": 2545,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								506,
-								506
+								2244,
+								2244
 							]
 						],
 						"settings":
@@ -996,8 +996,8 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 225.0,
+						"translation.x": 253.0,
+						"translation.y": 1809.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

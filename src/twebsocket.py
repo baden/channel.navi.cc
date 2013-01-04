@@ -22,8 +22,8 @@ class WebHandler(tornado.web.RequestHandler):
         self.render("template.html", title="My title")
 
 
-class SocketConnection(sockjs.tornado.SockJSConnection):
 #class MainHandler(websocket.WebSocketHandler):
+class SocketConnection(sockjs.tornado.SockJSConnection):
 
     def on_open(self, request):
         print "SocketJS opened:", repr(request.arguments)
@@ -81,7 +81,11 @@ def on_receive_message(data):
     print 'on_receive_message:%s' % str(data)
     for message in data:
         message = pickle.loads(message)
-        SocketRouter.broadcast(clients, json.dumps(message, indent=4))
+        try:
+            message = json.dumps(message, indent=4)
+        except TypeError, e:
+            message = json.dumps({"error": str(e), "dir": dir(e), "args": repr(e.args), "message": repr(e.message) })
+        SocketRouter.broadcast(clients, message)
 
 sub_stream.on_recv(on_receive_message)
 
