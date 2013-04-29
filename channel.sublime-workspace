@@ -544,7 +544,6 @@
 	},
 	"file_history":
 	[
-		"/var/lib/minidlna/buil_path.html",
 		"/home/baden/SDK/newgps.navi.cc/channel.navi.cc/etc/supervisord.conf",
 		"/home/baden/SDK/newgps.navi.cc/channel.navi.cc/src/test-ws.html",
 		"/home/baden/SDK/newgps.navi.cc/channel.navi.cc/requirements.txt",
@@ -671,7 +670,8 @@
 		"/home/baden/SDK/magnum-control/magnum-control/www/tests/api/user",
 		"/home/baden/SDK/magnum-control/magnum-control/www/index.html",
 		"/home/baden/SDK/magnum-control/magnum-control/www/tests/say.js",
-		"/home/baden/.config/sublime-text-2/Packages/User/Preferences.sublime-settings"
+		"/home/baden/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/baden/SDK/magnum-control/magnum-control/magnum-control.sublime-project"
 	],
 	"find":
 	{
@@ -996,8 +996,8 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 253.0,
-						"translation.y": 1809.0,
+						"translation.x": 0.0,
+						"translation.y": 441.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
